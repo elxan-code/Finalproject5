@@ -1,0 +1,455 @@
+﻿@model VmHome
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="slider-2">
+
+    <div class="owl-slider owl-carousel owl-theme ">
+        @foreach (var item in Model.Slider)
+        {
+            <div class="item">
+                <img class="formaxweidh" src="~/Uploads/@item.Image" alt="...">
+            </div>
+        }
+
+    </div>
+</section>
+
+<section id="icons">
+    <div class="container forpadding ">
+        <div class="row forcenter">
+            @foreach (var item in Model.Service)
+            {
+                <div class="col-md-3 ">
+                    <div><i class="@item.Icon icons1"></i></div>
+                    <div>
+                        <h5>@item.Title1</h5>
+                        <p>@item.Title2</p>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+    </div>
+</section>
+<section id="cta-main-homepage">
+    <div class="container xiomiair">
+        <div class="row midotspadding">
+            <div class="col-lg-5 col-sm-8 offset-sm-2 offset-lg-0">
+                <div class="inner-content">
+                    <span class="banner">Flash Deal!</span>
+                    <h4>Xiaomi Mi Dots</h4>
+                    <div class="counter">
+                        <h6 class="price">
+                            <em>$49.99</em>
+                            <br> $39.99
+                        </h6>
+                        <div class="row">
+                            <div class="timer">
+                                <div class="col-3">
+                                    <div id="days"></div>
+                                    <span>Days</span>
+                                </div>
+                                <div class="col-3">
+                                    <div id="hours"></div>
+                                    <span>Hours</span>
+                                </div>
+                                <div class="col-3">
+                                    <div id="minutes"></div>
+                                    <span>Minutes</span>
+                                </div>
+                                <div class="col-3">
+                                    <div id="seconds"></div>
+                                    <span>Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-dark-button">
+                        <a href="#">Get It Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="newirrevilitem">
+    <div class="container">
+        <div class="row news">
+            <div class="col-lg-12">
+                <div class="col-lg-12  arrivel">
+                    <h5>New Arrival Item</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+                    <span class="specialspan">50%</span>
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+                            <p class="latestp2">$241.99</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-4 col-6  specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+                    <span class="specialspan">50%</span>
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+                            <p class="latestp2">$241.99</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-4 col-6  specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3  col-md-4 col-6  specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="loudspekar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="kalonkashadov">
+                    <img class="forrelatitve1 img-fluid" src="~/Uploads1/@Model.HomeImage1.Image" alt="">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="newirrevilitem">
+    <div class="container">
+        <div class="row news">
+            <div class="col-lg-12">
+                <div class="col-lg-12  arrivel">
+                    <h5>
+                        Product By Category
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-lg-3  col-md-4 col-6  specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+                    <span class="specialspan">50%</span>
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+                            <p class="latestp2">$241.99</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-3  col-md-4 col-6  specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+                    <span class="specialspan">50%</span>
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+                            <p class="latestp2">$241.99</p>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-3  col-md-4 col-6  specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-3  col-md-4 col-6  specialsimage">
+                <div class="card">
+                    <img src="/img/OIP.jfif" alt="">
+
+                    <div class="card-body">
+                        <h6 class="card-title">Fitbit Versa Lite Edition Smart Watch (White) </h6>
+                        <div class="d-flex">
+                            <h5 class="latestp1">$26.00</h5>
+
+                        </div>
+                        <i class="fa-solid fa-cart-shopping c1"></i>
+                        <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="salefor">
+    <div class="container p1">
+        <div class="row a1">
+            @foreach (var item in Model.FlashDeal2)
+            {
+                <div class="col-lg-6 f1">
+                    <div class="q1">
+                        <img class="forrelatitve img-fluid " src="~/Uploads3/@item.Image" alt="">
+                        <div class="img-3">
+                            <h6>@item.Uptitle</h6>
+                            <h3>@item.Title</h3>
+                            <a href="@item.Link">
+                                <p>Shop Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            }
+
+
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<section id="newirrevilitem">
+    <div class="container">
+        <div class="row news">
+            <div class="col-lg-12">
+                <div class="col-lg-12  arrivel">
+                    <h5>Specials</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Specials)
+            {
+        <div class="col-lg-3   col-md-4 col-6  specialsimage">
+            <div class="card">
+                <img src="~/Uploadsspecials/@item.Image" alt="">
+                <span class="specialspan">@item.Discountfaiz</span>
+                <div class="card-body">
+                    <a asp-controller="Specials" asp-action="SpecialDeatails" asp-route-id="@item.Id">
+                        <h6 class="card-title">@item.Brand (@item.Color) </h6>
+                    </a>
+                
+                    <div class="d-flex">
+                        <h5 class="latestp1">@item.Price</h5>
+                        <p class="latestp2">@item.Discount</p>
+                    </div>
+                    <i class="fa-solid fa-cart-shopping c1"></i>
+                    <a href="#" class="btn btn-primary foradd">Add to Cart</a>
+                </div>
+            </div>
+        </div>            
+
+
+            }
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+</section>
+
+<section id="blogs">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-12  arrivel1">
+                <h5>Blogs</h5>
+            </div>
+            <div class="owl-blog owl-carousel owl-theme container">
+                @foreach (var item in Model.Blog)
+                {
+                    <div class="item">
+                        <div class="col-lg-12 forimagetop5">
+                            <div class="q3">
+                                <img src="~/Uploads2/@item.Image" alt="">
+                                <a asp-controller="Blog" asp-action="Blogdetails" asp-route-id="@item.Id">
+                                    <h5>@item.Uptitle</h5>
+                                </a>
+                                <div class="d-flex bgcolor">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>25 August, 2021</p>
+                                </div>
+                                <p>
+                                    @(item.Title)
+                                </p>
+                                <a class="backcolorfora" asp-controller="Blog" asp-action="Blogdetails" asp-route-id="@item.Id">
+                                    <p>
+                                        Read More
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<section id="brands">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-12 arrivel1">
+                <h5>Brands</h5>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="owl-carousel owl-theme container">
+        <div class="item ">
+            <a href="">
+                <img src="img/applesmartt.png" alt="">
+            </a>
+        </div>
+        <div class="item ">
+            <a href="">
+                <img src="img/logosamsung.jpg" alt="">
+            </a>
+        </div>
+        <div class="item ">
+            <a href="">
+                <img src="img/huaveylogo3.jpg" alt="">
+            </a>
+
+        </div>
+        <div class="item ">
+            <a href="">
+                <img src="img/xiomismorort.jpg" alt="">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/acer-logo.jpg" alt="">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/asus-logo.jpg" alt="">
+            </a>
+
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/Oneplus.jpg" alt="">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/nokialogo.jpg" alt="">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/Oppologo.jpg" alt="">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/canon-logo.png" alt="">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/Nikon.png" alt="">
+            </a>
+        </div>
+
+    </div>
+</section>
+<section id="button">
+    <a class="top_button" title="Back To Top" href="#"></a>
+</section>

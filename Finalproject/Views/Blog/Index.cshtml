@@ -1,0 +1,138 @@
+﻿@model VmHome
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section id="titleforall">
+    <div class="titlecontact">
+        <i class="fa-solid fa-house"></i>
+        <p>Blogs</p>
+    </div>
+</section>
+
+<section id="left">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="forborder">
+                    <h5>Information</h5>
+                    <a href="">
+                        <p>About us</p>
+                    </a>
+                    <a href="">
+                        <p>Delivery Information </p>
+                    </a>
+                    <a href="">
+                        <p>Privacy Policy </p>
+                    </a>
+                    <a href="">
+                        <p>Terms & Conditions </p>
+                    </a>
+                    <a href="">
+                        <p>Contact Us </p>
+                    </a>
+                </div>
+                <div>
+                    <img class="reklamucun" src="/img/left-banner-315x460 (1).jpg" alt="">
+                </div>
+
+                <div class="forborder">
+                    <h5>Latest</h5>
+
+                    <div class="d-flex forhoverimage">
+                        <a href="">
+                            <div class="imgg">
+
+                            </div>
+                            <div class="latest">
+                                MacBook Pro (Retina, 15-inch, 8-Core CPU)
+                                <div class="d-flex">
+                                    <p class="latestp1">$26.00</p>
+                                    <p class="latestp2">$241.99</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <div class="d-flex forhoverimage">
+                        <a href="">
+                            <div class="imgg">
+
+                            </div>
+                            <div class="latest">
+                                MacBook Pro (Retina, 15-inch, 8-Core CPU)
+                                <div class="d-flex">
+                                    <p class="latestp1">$26.00</p>
+                                    <p class="latestp2">$241.99</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <div class="d-flex forhoverimage">
+                        <a href="">
+
+                            <div class="imgg">
+
+                            </div>
+                            <div class="latest">
+                                MacBook Pro (Retina, 15-inch, 8-Core CPU)
+                                <div class="d-flex">
+                                    <p class="latestp1">$26.00</p>
+                                    <p class="latestp2">$241.99</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    @foreach (var item in Model.Blog)
+                    {
+                        <div class="col-lg-6 forimagetop5">
+                            <div class="q3">
+                                <h6>.</h6>
+                                <img src="~/Uploads2/@item.Image" alt="">
+                                <a asp-controller="Blog" asp-action="Blogdetails" asp-route-id="@item.Id">
+                                    <h5>@item.Uptitle</h5>
+                                </a>
+                                <div class="d-flex bgcolor">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>@item.CreatedDate</p>
+                                </div>
+                                <p>
+                                   @(item.Title.Length>240? item.Title.Substring(0,240)+"..." : item.Title)
+                                </p>
+                                <a class="backcolorfora" asp-controller="Blog" asp-action="Blogdetails" asp-route-id="@item.Id">
+                                    <p>
+                                        Read More
+                                    </p>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    }
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section id="button">
+    <a class="top_button" title="Back To Top" href="#" style="display: block;"></a>
+</section>
+

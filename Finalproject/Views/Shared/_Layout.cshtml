@@ -1,0 +1,765 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gobazar-Best Online Store</title>
+    <link rel="shortcut icon" href="~/img/images.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/scss/style.css">
+</head>
+
+<body>
+
+
+
+
+    <header id="header">
+        <div class="container fp">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a class="navbar-brand" href="home.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <select class="form-control-select" name="" id="">
+                        <option value="0">All Categories</option>
+
+
+                    </select>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search Product Here..."
+                               aria-label="Search">
+                        <div><button class="btn btn-outline-danger bu1" type="submit">Search</button></div>
+
+                    </form>
+                </div>
+                <div class="col-lg-4 icons">
+                    <div class="header_wishlist">
+
+                        <a href=""><i class="fa-solid fa-heart"></i></a>
+                        <span class="for0">0</span>
+                    </div>
+                    <div class="header_wishlist">
+
+
+
+                        <a type="button" class=" " data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user">
+
+                            </i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a asp-controller="Account" asp-action="Login">
+                                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-controller="Account" asp-action="Register" a>
+                                    <i class="fa-solid fa-registered"></i>
+                                    Register
+                                </a>
+                            </li>
+                        </ul>
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="header_wishlist">
+
+                        <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
+                        <span class="markershopping">0</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light   ">
+        <div class="container-fluid forbackgraoun">
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-itemm dropdown me-5">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop By Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                            <li>
+                                <a class="dropdown-item" href="specials.html">
+                                    <i class="fa-solid fa-fire-flame-curved dropdownicons"></i><span class="dropdownspan">Hot deals</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+
+                            <li class="planset">
+                                <a class="dropdown-item " href="tablet.html">
+                                    <i class="fa-solid fa-tablet dropdownicons"></i>
+
+                                    <span class="dropdownspan">Tablet</span>
+                                </a>
+
+                                <ul class="active submenu-1">
+                                    <li>
+
+                                    <li>
+                                        <a href="samsungtablet.html">
+                                            <img src="img/plansetsamsung.webp" alt="">
+                                            Samsung
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="appletablet.html">
+                                            <img src="img/palnsetipad.webp" alt="">
+                                            Apple
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="lenovotablet.html">
+                                            <img src="img/lenovaplanset.webp ">
+                                            Lenovo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/tclplanset.webp ">
+                                            TCL
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="huaveitablet.html">
+                                            <img src="img/huaveyplanset.webp">
+                                            Huawei
+                                        </a>
+                                    </li>
+
+
+
+                                </ul>
+
+
+                            </li>
+
+
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropendd">
+                                <a class="dropdown-item " href="smartphones.html">
+                                    <i class="fa-solid fa-mobile dropdownicons"></i><span class="dropdownspan">Smartphones</span>
+                                </a>
+
+                                <ul class="active submenu-1">
+                                    <li>
+
+                                        <a href="mispartfones.html">
+                                            <img src="img/xiomi.webp" alt="">
+                                            Xiaomi
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="samsungsmartphones.html">
+                                            <img src="img/samsung.webp" alt="">
+                                            Samsung
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="smartphonesapple.html">
+                                            <img src="img/display.webp" alt="">
+                                            Apple
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="huaweismartphones.html">
+                                            <img src="img/huaiway.webp ">
+                                            Huawei
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="oneplus.html">
+                                            <img src="img/oneplus.webp" alt="">
+                                            OnePlus
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="nokiasmartphones.html">
+                                            <img src="img/nokia.webp" alt="">
+                                            Nokia
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="oppo.smartphones.html">
+                                            <img src="img/Oppo.webp" alt="">
+                                            OPPO
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropendd1">
+                                <a class="dropdown-item" href="tv&video.html">
+                                    <i class="fa-solid fa-tv dropdownicons"></i><span class="dropdownspan">
+                                        TV &
+                                        Video
+                                    </span>
+                                </a>
+                                <ul class="active submenu-1">
+                                    <li>
+                                        <a href="lgtv.html">
+                                            <img src="img/display (1).webp" alt="">
+                                            LG
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/samsungt1.webp" alt="">
+                                            Samsung
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="sonytv.html">
+                                            <img src="img/Sony.webp" alt="">
+                                            Sony
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Hicensetv.html">
+                                            <img src="img/hisense.webp" alt="">
+                                            Hisense
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/TCl.webp" alt="">
+                                            TCL
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropendd12">
+                                <a class="dropdown-item" href="cameras.html">
+                                    <i class="fa-solid fa-camera dropdownicons"></i><span class="dropdownspan">
+                                        Cameras
+                                        & Photos
+                                    </span>
+                                </a>
+                                <ul class="active submenu-1">
+                                    <li>
+                                        <a href="canoncamer.html">
+                                            <img src="img/Canon.jpg" alt="">
+                                            Canon
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="nikol.html">
+                                            <img src="img/nikon.webp" alt="">
+                                            Nikon
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="sonycamera.html">
+                                            <img src="img/Sonycamera.png" alt="">
+                                            Sony
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="fujifilm.html">
+                                            <img src="img/Fujifilm.jpg" alt="">
+                                            Fujifilm
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="ponosonic.html">
+                                            <img src="img/Canon.jpg" alt="">
+                                            Ponosonic
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gopro.html">
+                                            <img src="img/Gopro.png" alt="">
+                                            Go PRo
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropendd123">
+                                <a class="dropdown-item" href="smartwatch.html">
+                                    <i class="fa-solid fa-clock dropdownicons"></i><span class="dropdownspan">
+                                        Smart
+                                        WATCH
+                                    </span>
+                                </a>
+                                <ul class="active submenu-1">
+                                    <li>
+                                        <a href="applesmartwatc.html">
+                                            <img src="img/applewatch.webp" alt="">
+                                            Apple
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="huaweysmartwatch.html">
+                                            <img src="img/HUaiveysmart.webp" alt="">
+                                            Huawei
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="samsungsmartwatc.html">
+                                            <img src="img/Samsunwwatch.webp" alt="">
+                                            Samsung
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="xiaomismartwatch.html">
+                                            <img src="img/Xiomiwatch.webp" alt="">
+                                            Xiaomi
+                                        </a>
+                                    </li>
+                                </ul>
+
+
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropendd111">
+                                <a class="dropdown-item" href="headsets.html">
+                                    <i class="fa-solid fa-headset dropdownicons"></i><span class="dropdownspan">Headsets</span>
+                                </a>
+                                <ul class="active submenu-1">
+                                    <li>
+                                        <a href="appleheadset.html">
+                                            <img src="img/airdots.jpg" alt="">
+                                            Apple
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="xiaomiheadset.html">
+                                            <img src="img/midots.jpg" alt="">
+                                            Xiaomi
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="huaweiheadset.html">
+                                            <img src="img/Huavei.jpg" alt="">
+                                            Huawei
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="drdre.html">
+                                            <img src="img/dr.drees.jpg" alt="">
+                                            Dr.dre
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Jblheadset.html">
+                                            <img src="img/Jbl.png" alt="">
+                                            JBL
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropenddpc">
+                                <a class="dropdown-item" href="hoteboks.html">
+                                    <i class="fa-solid fa-desktop dropdownicons"></i>
+                                    <span class="dropdownspan">Notebooks</span>
+                                </a>
+                                <ul class="active submenu-1">
+                                    <li>
+                                        <a href="asusnotebooks.html">
+                                            <img src="img/asusnote.jpg" alt="">
+                                            Asus
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="acernotebooks.html">
+                                            <img src="img/acernote.jpg" alt="">
+                                            Acer
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="applenoteboks.html">
+                                            <img src="img/imac.png" alt="">
+                                            Apple
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="lenovonotesboks.html">
+                                            <img src="img/Lenova note.webp" alt="">
+                                            Lenovo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="fujutsunotesbooks.html">
+                                            <img src="img/fijutsu.jpg" alt="">
+                                            Fijutsu
+                                        </a>
+
+
+                                    </li>
+                                    <li>
+                                        <a href="dellnotebooks.html">
+                                            <img src="img/dell.jpg" alt="">
+                                            Dell
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="hpnotebooks.html">
+                                            <img src="img/hp.jpg" alt="">
+                                            HP
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="msinotebooks.html">
+                                            <img src="img/msi.jpg" alt="">
+                                            Msi
+                                        </a>
+
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropenddps">
+                                <a class="dropdown-item" href="console-game.html">
+                                    <i class="fa-solid fa-gamepad dropdownicons"></i><span class="dropdownspan">
+                                        Console
+                                        Game
+                                    </span>
+                                </a>
+                                <ul class="active submenu-1">
+                                    <li>
+                                        <a href="playtation.html">
+                                            <img src="img/playstationss.jpg" alt="">
+                                            PlayStation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="xbox.html">
+                                            <img src="img/xbox.jpg" alt="">
+                                            Xbox
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="nintendo.html">
+                                            <img src="img/NIntendoi.jpg" alt="">
+                                            Nintendo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" asp-controller="Brands" asp-action="Index">Brands</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" asp-controller="Specials" asp-action="Index">Specials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" asp-controller="Contact" asp-action="Index">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " aria-current="page" asp-controller="Blog" asp-action="Index">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+
+
+                </ul>
+                <div class="d-flex paddingcss">
+                    <div>
+                        <a href=""> <img src="/img/app.png" alt=""></a>
+
+                    </div>
+                    <div>
+                        <a class="nondecaration" href="">
+                            <p class="forpadddingdd">Download the App</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    @RenderBody()
+
+
+
+
+
+    <footer>
+        <div class="forcolor">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 b2">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>Sign Up For Newslatter</span>
+                    </div>
+                    <div class="col-lg-6 d-flex">
+                        <input type="email" name="txtemail" id="txtemail" value="" placeholder="Enter Your Email"
+                               class="form-control input-lg" />
+                        <button class="b1">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container forpend">
+            <div class="row">
+                <div class="col-lg-3 col-6 s1">
+                    <img class="s1" src="~/img/logo.png" alt="">
+                    <h5>(+00) 012 345 67 89</h5>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-location-dot fa-solids1"></i>
+                        <p>
+                          yeni yasmal
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-phone fa-solids1"></i>
+                        <p>+1 3235551234</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-comment-dots fa-solids1"></i>
+                        <p>demo@gmail.com
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 s2 px-5 ">
+                    <h5>My Account</h5>
+                    <a href="">
+                        <p>My Account</p>
+                    </a>
+                    <a href="">
+                        <p>Order History</p>
+                    </a>
+                    <a href="">
+                        <p>Wish List</p>
+                    </a>
+                    <a href="">
+                        <p>Affiliates</p>
+                    </a>
+                    <a href="">
+                        <p>Newsletter</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 s2 ">
+                    <h5>Customer Service</h5>
+                    <a href="">
+                        <p>Contact Us</p>
+                    </a>
+                    <a href="">
+                        <p>Site Map</p>
+                    </a>
+                    <a href="">
+                        <p>Order History</p>
+                    </a>
+                    <a href="">
+                        <p>Newsletter</p>
+                    </a>
+                    <a href="">
+                        <p>Gift Certificates</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 s2 px-5 ">
+                    <h5>Information</h5>
+                    <a href="">
+                        <p>About Us</p>
+                    </a>
+                    <a href="">
+                        <p>Delivery Information</p>
+                    </a>
+                    <a href="">
+                        <p>Aprivacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p>Contact Us</p>
+                    </a>
+                    <a href="">
+                        <p>Terms & Conditions</p>
+                    </a>
+                </div>
+
+
+                <div class="foricons1">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="v1">
+            <div class="container forpaddingv">
+                <div class="row">
+                    <div class="col-lg-6 v2">
+                        <p>Powered By OpenCart Gobazar - Best Online Store © 2022</p>
+                    </div>
+                    <div class="col-lg-6 v3">
+                        <a href=""> <img src="img/visa.jpg" alt=""></a>
+                        <a href=""> <img src="img/discover.jpg" alt=""></a>
+                        <a href=""> <img src="img/payment.jpg" alt=""></a>
+                        <a href=""> <img src="img/paypal.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/fd55c34fa1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+    <script>
+
+
+
+
+        $('.owl-blog').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('.owl-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
+
+
+    </script>
+    <script src="~/js/script.js"></script>
+</body>
+
+</html>
